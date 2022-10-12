@@ -10,7 +10,7 @@
 
 int do_scanhash(int thr_id, struct work *work, uint32_t max_nonce, uint64_t *hashes_done, void (*hash_func)(const char *, char *, uint32_t))
 {
-	uint32_t _ALIGN(64) vhash[8];
+	uint32_t _ALIGN(64) vhash[17];
 	uint32_t _ALIGN(64) endiandata[20];
 	uint32_t *pdata = work->data;
 	uint32_t *ptarget = work->target;
