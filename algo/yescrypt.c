@@ -1,5 +1,5 @@
 #include "miner.h"
-
+#include <hash-ops.h>
 #include <stdio.h>
 #include <string.h>
 #include <openssl/sha.h>
